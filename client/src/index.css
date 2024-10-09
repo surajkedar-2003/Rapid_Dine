@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* explore menu page css */
+.explore-menu-list::-webkit-scrollbar{
+    /* width: 0; */
+    display: none;
+     
+}
+
+/* index.css */
+.nav-profile-dropdown {
+    @apply absolute hidden right-0 z-10 group-hover:flex group-hover:flex-col group-hover:items-center group-hover:justify-center group-hover:gap-2.5 group-hover:bg-[#fff3ef] group-hover:py-3 group-hover:px-6 group-hover:border group-hover:border-tomato group-hover:outline group-hover:outline-white group-hover:rounded;
+}
